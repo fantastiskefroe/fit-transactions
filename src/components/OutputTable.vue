@@ -1,6 +1,6 @@
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
-import { Row } from '@/types/row'
+import { defineComponent, type PropType } from 'vue'
+import type { Row } from '@/types/row'
 
 export default defineComponent({
   name: 'OverviewTable',
@@ -85,7 +85,7 @@ export default defineComponent({
         ]
       ]
     },
-    download(csv: string): Promise<void> {
+    download(csv: string): void {
       if (!csv) {
         return
       }

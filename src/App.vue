@@ -2,7 +2,7 @@
 import '@/assets/style.scss'
 import { defineComponent } from 'vue'
 import OverviewTable from '@/components/OverviewTable.vue'
-import { Row } from '@/types/row'
+import type { Row } from '@/types/row'
 import OutputTable from '@/components/OutputTable.vue'
 
 export default defineComponent({
