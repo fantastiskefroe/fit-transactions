@@ -49,7 +49,9 @@ export default defineComponent({
     },
     mapRow(input: string[], id: number): Row {
       const charged = parseFloat(input[3])
-      const fee = -parseFloat(input[5])
+      const subFee1 = -parseFloat(input[4])
+      const subFee2 = -parseFloat(input[5])
+      const fee = subFee1 + subFee2
 
       return {
         id,
